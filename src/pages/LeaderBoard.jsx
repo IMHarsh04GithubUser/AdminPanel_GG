@@ -10,7 +10,7 @@ const LB = () => {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/leaderboard'); // Adjust the URL as necessary
+        const response = await axios.get('https://admin-panel-gg.vercel.app/api/leaderboard'); // Adjust the URL as necessary
         setTopPlayers(response.data);
       } catch (err) {
         console.error("Error fetching leaderboard:", err);
