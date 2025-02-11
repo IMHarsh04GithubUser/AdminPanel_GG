@@ -8,7 +8,7 @@ const Orders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/orders");
+      const response = await axios.get("https://admin-panel-gg.vercel.app/orders");
       if (response.data.data) {
         
         toast.success('Fetch Data Successfully')
