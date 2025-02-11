@@ -29,7 +29,7 @@ const Add = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/add",
+        "https://admin-panel-gg.vercel.app/add",
         formData        
       );
 
