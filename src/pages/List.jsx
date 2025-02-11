@@ -8,7 +8,7 @@ const List = () => {
 
   const fetchList = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/list');
+      const response = await axios.get('https://admin-panel-gg.vercel.app/list');
       if (response.data.success) {
         setList(response.data.data);
       } else {
